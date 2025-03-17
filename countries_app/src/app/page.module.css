@@ -1,0 +1,191 @@
+.container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 20px;
+  font-family: Arial, sans-serif;
+}
+
+.title {
+  text-align: center;
+  font-size: 2rem;
+  margin-bottom: 20px;
+}
+
+.searchBar {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  font-size: 1rem;
+}
+
+.table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.tableRow:nth-child(even) {
+  background-color: #f9f9f9;
+}
+
+.tableCell,
+.tableHeader {
+  padding: 12px;
+  text-align: left;
+  border: 1px solid #ddd;
+}
+
+.tableHeader {
+  background-color: #f4f4f4;
+}
+
+.flag {
+  width: 30px;
+  border-radius: 4px;
+}
+
+.link {
+  color: blue;
+  text-decoration: none;
+}
+
+.button {
+  padding: 5px 10px;
+  background-color: #008cba;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border-radius: 4px;
+}
+
+.button:hover {
+  background-color: #005f7a;
+}
+
+.selectedButton {
+  background-color: red;
+}
+
+.comparisonContainer {
+  margin-top: 20px;
+  padding: 20px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+}
+
+.comparisonTitle {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.searchInput {
+  width: 100%;
+  padding: 10px;
+  margin: 10px 0;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+}
+
+.compareSection {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.dropdown {
+  padding: 10px;
+  font-size: 16px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+}
+
+.comparisonTable {
+  margin-top: 20px;
+}
+
+.comparisonTable table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 10px;
+}
+
+.comparisonTable th,
+.comparisonTable td {
+  border: 1px solid #ddd;
+  padding: 10px;
+  text-align: center;
+}
+
+.comparisonTable th {
+  background-color: #f4f4f4;
+  font-weight: bold;
+}
+
+/* Loader Styling */
+.loadingContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  height: 50vh;
+}
+
+.loader {
+  border: 5px solid #f3f3f3;
+  border-top: 5px solid #007bff;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  animation: spin 1s linear infinite;
+  margin-bottom: 10px;
+}
+
+@keyframes spin {
+  0% { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+
+/* Error Styling */
+.errorContainer {
+  text-align: center;
+  color: red;
+  font-size: 18px;
+  font-weight: bold;
+  margin-top: 20px;
+  padding: 10px;
+  border: 1px solid red;
+  background-color: #ffe5e5;
+  border-radius: 5px;
+}
+
+/* Pagination */
+.pagination {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+  margin-top: 20px;
+}
+
+.pageButton {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  padding: 8px 12px;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 14px;
+  transition: background-color 0.3s ease;
+}
+
+.pageButton:disabled {
+  background-color: #b0c4de;
+  cursor: not-allowed;
+}
+
+.pageInfo {
+  font-size: 16px;
+  font-weight: bold;
+}
+
